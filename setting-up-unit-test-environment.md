@@ -34,13 +34,16 @@ sonar-scanner
 ## setting up xDebug
 This will allow you to have proper debugging for your php apps. In the long run this will save you hours of time.
 
-* open /Applications/XAMPP/xamppfiles/etc/php.ini
+* open /Applications/XAMPP/xamppfiles/etc/php.ini or /etc/php.ini
 * scroll to the very end
 * make sure the xDebug lines are not commented out, add them if they arent there
 
 ```
-[Zend] zend_extension = /full/path/to/xdebug.so xdebug.remote_enable = 1
-xdebug.remote_port = 9000 xdebug.remote_host = localhost
+[Zend]
+zend_extension = /usr/lib/php/extensions/no-debug-non-zts-20180731/xdebug.so
+xdebug.remote_enable = 1
+xdebug.remote_port = 9000
+xdebug.remote_host = localhost
 ```
 
 * restart apache
