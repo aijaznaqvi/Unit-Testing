@@ -34,6 +34,16 @@ sonar-scanner
 ## setting up xDebug
 This will allow you to have proper debugging for your php apps. In the long run this will save you hours of time.
 
+First check if you have xdebug module in your machine:
+```
+php -i | grep xdebug
+```
+then check if it's enabled:
+```
+php -m | grep xdebug
+```
+If you don't have the xdebug module, you'll need to install it.
+
 * open /Applications/XAMPP/xamppfiles/etc/php.ini or /etc/php.ini
 * scroll to the very end
 * make sure the xDebug lines are not commented out, add them if they arent there
@@ -51,8 +61,8 @@ xdebug.remote_host = localhost
 ## References
 1. [How to Install Node.js and NPM on a Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 1. [NPM module to run SonarQube/SonarCloud analyses](https://www.npmjs.com/package/sonarqube-scanner)
+1. [ERROR No code coverage driver available](https://github.com/Codeception/Codeception/issues/1207)
 1. [setting up xDebug](https://jonathansblog.co.uk/setting-up-xmapp-on-a-mac-with-xdebug)
 
 ## Bibliography
 1. [node-sonar-scanner](https://www.npmjs.com/package/sonar-scanner)
-1. [ERROR No code coverage driver available](https://github.com/Codeception/Codeception/issues/1207)
