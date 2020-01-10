@@ -91,6 +91,7 @@ This command populates the test database with structure and test data.
 1. [NPM module to run SonarQube/SonarCloud analyses](https://www.npmjs.com/package/sonarqube-scanner)
 1. [ERROR No code coverage driver available](https://github.com/Codeception/Codeception/issues/1207)
 1. [setting up xDebug](https://jonathansblog.co.uk/setting-up-xmapp-on-a-mac-with-xdebug)
+1. [Error while sending QUERY packet](https://stackoverflow.com/questions/30753674/error-while-sending-query-packet)
 
 ## Bibliography
 1. [node-sonar-scanner](https://www.npmjs.com/package/sonar-scanner)
