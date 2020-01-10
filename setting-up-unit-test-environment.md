@@ -44,7 +44,8 @@ php -m | grep xdebug
 ```
 If you don't have the xdebug module, you'll need to install it.
 
-* open /Applications/XAMPP/xamppfiles/etc/php.ini or /etc/php.ini
+* copy `/etc/php.ini.default` to `/etc/php.ini` if `/etc/php.ini` doesn't exist.
+* open `/Applications/XAMPP/xamppfiles/etc/php.ini` or `/etc/php.ini`
 * scroll to the very end
 * make sure the xDebug lines are not commented out, add them if they arent there
 
