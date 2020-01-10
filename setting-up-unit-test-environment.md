@@ -58,6 +58,33 @@ xdebug.remote_host = localhost
 ```
 
 * restart apache
+## setting up test database
+### Change your MySQL server max_allowed_packet
+1) Edit your server my.cnf file using below command
+`sudo vi /Applications/XAMPP/xamppfiles/etc/my.cnf`
+2) Add the line under the [MYSQLD] section. :
+```
+max_allowed_packet=1024M
+wait_timeout = 100
+```
+
+3) Then restart your mysql server
+4) You can verify by going into PHPMyAdmin or opening a SQL command window and executing:
+```
+SHOW VARIABLES LIKE 'max_allowed_packet'
+```
+
+### Create test database
+1) Create empty test database schema by opening a SQL command window and executing:
+```
+create schema ci_pos_test;
+```
+2) open your terminal window
+3) please write following command in your terminal
+```
+./yii test-database --create --verbose
+```
+This command populates the test database with structure and test data.
 
 ## References
 1. [How to Install Node.js and NPM on a Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
