@@ -1,4 +1,4 @@
-# Setting Up Unit Test Environment
+# Setting Up Unit Test Environment on a Mac
 ## How to Install Node.js and NPM on a Mac
 ### Installation
 Installing Node.js and NPM is pretty straightforward using Homebrew. Homebrew handles downloading, unpacking and installing Node and NPM on your system. The whole process (after you have XCode and Homebrew installed) should only take you a few minutes.
