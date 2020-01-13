@@ -86,12 +86,25 @@ create schema ci_pos_test;
 ```
 This command populates the test database with structure and test data.
 
+## Setting up SonarLint
+SonarLint is an IDE extension that helps you detect and fix quality issues as you write code. Like a spell checker, SonarLint squiggles flaws so they can be fixed before committing code. You can get it directly from the PhpStorm Plugin Repository, and it will then detect new bugs and quality issues as you code.
+
+If your project is analyzed on SonarQube or on SonarCloud, SonarLint can connect to the server to retrieve the appropriate quality profiles and settings for that project.
+
+Prerequisite: You must already have PhpStorm installed and have a project open.
+
+1. Launch PhpStorm and open a project.
+1. In PhpStorm, open Settings (called Preferences on Mac), then go to Plug-ins and search "SonarLint" and click "Install".
+1. You may need to re-launch PhpStorm for the new plug-in to become active.
+
 ## References
 1. [How to Install Node.js and NPM on a Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 1. [NPM module to run SonarQube/SonarCloud analyses](https://www.npmjs.com/package/sonarqube-scanner)
 1. [ERROR No code coverage driver available](https://github.com/Codeception/Codeception/issues/1207)
 1. [setting up xDebug](https://jonathansblog.co.uk/setting-up-xmapp-on-a-mac-with-xdebug)
 1. [Error while sending QUERY packet](https://stackoverflow.com/questions/30753674/error-while-sending-query-packet)
+1. [SonarLint](https://plugins.jetbrains.com/plugin/7973-sonarlint)
 
 ## Bibliography
 1. [node-sonar-scanner](https://www.npmjs.com/package/sonar-scanner)
+1. [SonarQube and SonarLint User Guide](https://openlmis.atlassian.net/wiki/spaces/OP/pages/96469059/SonarQube+and+SonarLint+User+Guide)
